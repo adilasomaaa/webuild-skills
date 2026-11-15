@@ -1,0 +1,12 @@
+{
+  "name": "webuild-theme",
+  "version": "1.0.0",
+  "description": "Workflows, data contract and design system (anti-slop, typography, spacing, responsive) for Webuild themes built from webuild-theme-starter.",
+  "author": {
+    "name": "adilasomaaa",
+    "url": "https://github.com/adilasomaaa"
+  },
+  "homepage": "https://github.com/adilasomaaa/webuild-skills",
+  "repository": "https://github.com/adilasomaaa/webuild-skills",
+  "license": "MIT"
+}

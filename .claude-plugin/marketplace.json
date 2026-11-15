@@ -1,0 +1,17 @@
+{
+  "name": "webuild-skills",
+  "owner": {
+    "name": "adilasomaaa",
+    "url": "https://github.com/adilasomaaa"
+  },
+  "metadata": {
+    "description": "Claude Code skills for building Webuild public-portal themes."
+  },
+  "plugins": [
+    {
+      "name": "webuild-theme",
+      "source": "./plugins/webuild-theme",
+      "description": "Workflows, data contract and design system (anti-slop, typography, spacing, responsive) for Webuild themes built from webuild-theme-starter."
+    }
+  ]
+}
