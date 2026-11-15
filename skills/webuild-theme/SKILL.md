@@ -24,7 +24,9 @@ The hard rules are in `AGENTS.md` (repo root). This skill is how to work so the 
 Do this every time you are about to change a view or CSS, even for small changes.
 
 1. Read `AGENTS.md`, then the parts of `theme.json` relevant to the target: `sections`,
-   `component_variants.<component>`, and `component_settings.<component>`.
+   `component_variants.<component>`, and `component_settings.<component>`. Look the component up in
+   `docs/guide/pembuatan-tema/02-inventaris-komponen.md`: every variant and option it must support,
+   its max columns, whether it can sit in the footer, and its required feature.
 2. Read `references/design-system.md` and `references/anti-slop.md` if you haven't in this session.
 3. Read the **whole** target file, including its header comment (the variable contract), and every
    component it `@include`s.
@@ -124,12 +126,21 @@ Start every workflow with **Step 0** and finish with **Verification**.
 3. Content in the mockup (copy, numbers, photos) is **sample content**. Replace it with the matching
    variables. Mockup content that has no data source is reported as a gap, not copied.
 4. Sections that don't appear in the design are **still required**. Style them to match.
-5. Work in stages: layout (header/footer), then home, then list pages, then detail pages. Verify at each stage.
+5. Frames marked `[USULAN]` are proposals. Handle them per Workflow 4, never by silently inventing
+   data or settings.
+6. Work in stages: tokens, layout (header/footer), home components, page-builder components, inner
+   pages, then layout presets. Verify at each stage.
+7. Recommended home layouts from the design become `theme.json → layout_presets` (format in
+   `docs/guide/pembuatan-tema/04-pengembangan-tema.md`). Use only allowed column splits
+   (`12`, `6/6`, `4/8`, `8/4`, `4/4/4`), respect each component's max columns, and only use
+   section types listed in `theme.json → sections`.
 
 ### Workflow 4 — Adding a variant or component
 
-Follow `references/variants-and-components.md`. Additions are fine as long as they're flagged
-(`"custom": true` + `description`), logged in `CHANGELOG.md`, and base options stay untouched.
+Follow `references/variants-and-components.md`. Options added to a **base variant** need a `label`
+and `description` and show up in webuild-app automatically. New options for a **fixed variant** and
+new data fields are proposals: log them in `CHANGELOG.md` → **Proposals** and don't implement them
+until webuild-app supports them.
 
 ### Workflow 5 — Colors
 
@@ -159,6 +170,7 @@ instead of silently ignoring them. If you can't open a browser, say the visual c
 ## Don'ts
 
 - Delete or rename files in `views/pages/` or `views/sections/`, or remove entries from `theme.json → sections`.
+- Implement a proposal (fixed-variant option, new data field) before webuild-app supports it.
 - Remove base variant options or change their `configuration_key`.
 - Rename variables/config keys that come from webuild-app, or read keys that don't exist.
 - Invented data in views or in `demo/data.json`.

@@ -3,8 +3,8 @@
 1. **Version:** bump `theme.json → version` (semver). Patch for fixes, minor for new variants or
    components, major for large visual changes. Don't raise `api_version` beyond what Theme Kit
    supports (currently `1.1`).
-2. **CHANGELOG.md:** move `[Unreleased]` into the new version with a date. Make sure **New variants**
-   and **New components** are complete.
+2. **CHANGELOG.md:** move `[Unreleased]` into the new version with a date. Make sure **New variants**,
+   **New components** and **Proposals** are complete.
 3. **Build:** run `npm run build` and commit `dist/`.
 4. **Validate:** `php artisan theme:check --render` passes with no errors.
 5. **Manual check in the workbench:**

@@ -10,7 +10,7 @@
   "plugins": [
     {
       "name": "webuild-theme",
-      "source": "./plugins/webuild-theme",
+      "source": "./",
       "description": "Workflows, data contract and design system (anti-slop, typography, spacing, responsive) for Webuild themes built from webuild-theme-starter."
     }
   ]
