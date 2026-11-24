@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "webuild-content": {
+      "type": "http",
+      "url": "${WEBUILD_MCP_URL}",
+      "headers": {
+        "Authorization": "Bearer ${WEBUILD_MCP_TOKEN}"
+      }
+    }
+  }
+}

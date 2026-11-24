@@ -1,0 +1,12 @@
+{
+  "name": "webuild-content",
+  "version": "1.0.0",
+  "description": "Bundled MCP server and /webuild-content workflow skill for creating, editing, publishing, archiving, and managing Articles, News, and Media in Webuild CMS.",
+  "author": {
+    "name": "adilasomaaa",
+    "url": "https://github.com/adilasomaaa"
+  },
+  "homepage": "https://github.com/adilasomaaa/webuild-skills",
+  "repository": "https://github.com/adilasomaaa/webuild-skills",
+  "license": "MIT"
+}

@@ -1,0 +1,20 @@
+{
+  "name": "webuild-content",
+  "displayName": "WeBuild Content",
+  "version": "1.0.0",
+  "description": "Bundled MCP server, workflow skill (/webuild-content), and coding-vs-CMS guard rule for creating, editing, publishing, archiving, and managing Articles, News, and Media in Webuild CMS.",
+  "author": {
+    "name": "adilasomaaa",
+    "url": "https://github.com/adilasomaaa"
+  },
+  "homepage": "https://github.com/adilasomaaa/webuild-skills",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adilasomaaa/webuild-skills"
+  },
+  "suggestedPrompts": [
+    "/webuild-content cek koneksi dan aplikasi target aktif",
+    "/webuild-content buatkan draft berita dari materi berikut",
+    "/webuild-content tampilkan daftar draft artikel terbaru"
+  ]
+}

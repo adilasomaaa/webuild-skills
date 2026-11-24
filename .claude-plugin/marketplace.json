@@ -5,13 +5,18 @@
     "url": "https://github.com/adilasomaaa"
   },
   "metadata": {
-    "description": "Claude Code skills for building Webuild public-portal themes."
+    "description": "Agent plugins and skills for Webuild public-portal themes and CMS content workflows."
   },
   "plugins": [
     {
       "name": "webuild-theme",
       "source": "./",
       "description": "Workflows, data contract and design system (anti-slop, typography, spacing, responsive) for Webuild themes built from webuild-theme-starter."
+    },
+    {
+      "name": "webuild-content",
+      "source": "./plugins/webuild-content",
+      "description": "Bundled MCP server and /webuild-content workflow skill for creating, editing, publishing, archiving, and managing Articles, News, and Media in Webuild CMS."
     }
   ]
 }
